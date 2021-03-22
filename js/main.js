@@ -1,25 +1,39 @@
-
-function clickedNext(){
+function clickedNext() {
     var startImg = $('.show-img');
-    var imgNext = startImg.next(); 
-    
-    startImg.removeClass('show-img');
-    imgNext.addClass('show-img');
-    
+
+    if (startImg.hasClass('last-cld')) {
+        var imgNext = $('#dad-img');
+        startImg.removeClass('show-img');
+        imgNext.addClass('show-img');
+    } else {
+        var imgNext = startImg.next();
+        startImg.removeClass('show-img');
+        imgNext.addClass('show-img');
+
+    }
+
 }
 
-function clickedPrev(){
+function clickedPrev() {
     var startImg = $('.show-img');
-    var imgNext = startImg.prev(); 
+
+    if (startImg.hasClass('.show-img.dad')) {
+        var imgNext = $('.last-cld');
+        startImg.removeClass('show-img');
+        imgNext.addClass('show-img');
     
-    startImg.removeClass('show-img');
-    imgNext.addClass('show-img');
-    
+    } else {
+        var imgNext = startImg.prev('img');
+        startImg.removeClass('show-img');
+        imgNext.addClass('show-img');
+
+    }
+
 }
 
 
-function init(){
-    
+function init() {
+
     $('.skip-next').click(clickedNext);
     $('.skip-prev').click(clickedPrev);
 }
