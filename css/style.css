@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+
 body{
-    background-color: #ada;
+    font-size: 40px;
+    background-color: rgb(3, 69, 100);
+}
+
+h1{
+    text-align: center;
+    color: floralwhite;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    
+    display: none;
+    border-radius: 20px;
+    margin:0 20px;
+}
+
+img.show-img{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color:white;
 }
