@@ -17,7 +17,7 @@ function clickedNext() {
 function clickedPrev() {
     var startImg = $('.show-img');
 
-    if (startImg.hasClass('.show-img.dad')) {
+    if (startImg.hasClass('dad')) {
         var imgNext = $('.last-cld');
         startImg.removeClass('show-img');
         imgNext.addClass('show-img');
