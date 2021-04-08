@@ -21,10 +21,11 @@ h1{
 }
 
 img{
-    
+    opacity: 0.9;
     display: none;
     border-radius: 20px;
     margin:0 20px;
+    
 }
 
 img.show-img{
